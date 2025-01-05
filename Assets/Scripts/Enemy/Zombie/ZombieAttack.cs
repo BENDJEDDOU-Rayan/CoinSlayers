@@ -7,20 +7,21 @@ public class ZombieAttack : MonoBehaviour
     private Animator animator;
     public bool isAttacking;
     private bool canAttack = true;
+    private ZombieHealth health;
     void Start()
     {
         animator = GetComponent<Animator>();
+        health = GetComponent<ZombieHealth>();
     }
 
     public void HandleAttack()
     {
-        if (canAttack)
+        if (canAttack && !health.isDead)
         {
             isAttacking = true;
             int random = Random.Range(1, 3);
             animator.SetTrigger("attack" + random);
             StartCoroutine(AttackCooldown());
-            // ThrowAttackRaycast();
         }
     }
 
