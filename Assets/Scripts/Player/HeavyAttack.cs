@@ -119,11 +119,7 @@ public class HeavyAttack : MonoBehaviour
         yield return new WaitForSeconds(1.2f);
         movement.EnableMovement();
         IsHeavyAttacking = false;
-
-        // Now wait for the cooldown
         yield return new WaitForSeconds(heavyAttackCooldown);
-
-        // After the cooldown, re-enable actions
         heavyAttackInputAction.Enable();
     }
 

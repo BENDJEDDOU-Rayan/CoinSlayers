@@ -33,11 +33,6 @@ public class PlayerHealthBar : MonoBehaviour
             {
                 StartSmoothHealthChange(targetFillAmount);
             }
-
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                playerHealth.TakeDamage(20);
-            }
         }
     }
 

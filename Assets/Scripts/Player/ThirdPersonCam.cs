@@ -39,7 +39,7 @@ public class ThirdPersonCam : MonoBehaviour
 
     private void HandleGameStateUpdate(GameState state)
     {
-        if (state == GameState.Lose)
+        if (state == GameState.Lose || state == GameState.Win)
         {
             moveAction.Disable();
 

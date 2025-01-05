@@ -27,14 +27,6 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         }
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            transform.position = new Vector3(0, 12, 0);
-        }
-    }
-
     public void Die()
     {
         SoundManager.PlaySound(SoundType.PLAYER_DEATH, 0.5f);
