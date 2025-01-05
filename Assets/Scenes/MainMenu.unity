@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 228892092}
   - component: {fileID: 228892091}
   - component: {fileID: 228892094}
+  - component: {fileID: 228892095}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -197,6 +198,22 @@ MonoBehaviour:
         - m_Target: {fileID: 228892094}
           m_TargetAssemblyTypeName: HoverEffectButton, Assembly-CSharp
           m_MethodName: ResetHoverEffect
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 228892095}
+          m_TargetAssemblyTypeName: MainMenuButtons, Assembly-CSharp
+          m_MethodName: HandleCreditsOpen
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -315,6 +332,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2efd4b7cb8ea324c86db33dd820d713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &228892095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228892089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a9e071c529d3e45b017ba1be66ce44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneController: {fileID: 0}
+  fadeEffect: {fileID: 0}
 --- !u!1 &264564645
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,6 +466,7 @@ GameObject:
   - component: {fileID: 386799650}
   - component: {fileID: 386799649}
   - component: {fileID: 386799652}
+  - component: {fileID: 386799653}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -497,6 +529,22 @@ MonoBehaviour:
         - m_Target: {fileID: 386799652}
           m_TargetAssemblyTypeName: HoverEffectButton, Assembly-CSharp
           m_MethodName: ResetHoverEffect
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 386799653}
+          m_TargetAssemblyTypeName: MainMenuButtons, Assembly-CSharp
+          m_MethodName: HandleOpenSettings
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -615,6 +663,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2efd4b7cb8ea324c86db33dd820d713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &386799653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386799647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a9e071c529d3e45b017ba1be66ce44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneController: {fileID: 0}
+  fadeEffect: {fileID: 0}
 --- !u!1 &571133741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,6 +1341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneController: {fileID: 1115689565}
+  fadeEffect: {fileID: 0}
 --- !u!65 &1144953972
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1325,6 +1388,7 @@ GameObject:
   - component: {fileID: 1183557795}
   - component: {fileID: 1183557794}
   - component: {fileID: 1183557797}
+  - component: {fileID: 1183557798}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -1387,6 +1451,22 @@ MonoBehaviour:
         - m_Target: {fileID: 1183557797}
           m_TargetAssemblyTypeName: HoverEffectButton, Assembly-CSharp
           m_MethodName: ResetHoverEffect
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1183557798}
+          m_TargetAssemblyTypeName: MainMenuButtons, Assembly-CSharp
+          m_MethodName: HandleExit
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1505,6 +1585,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2efd4b7cb8ea324c86db33dd820d713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1183557798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183557792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a9e071c529d3e45b017ba1be66ce44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneController: {fileID: 1115689565}
+  fadeEffect: {fileID: 1961171742}
 --- !u!1 &1550097676
 GameObject:
   m_ObjectHideFlags: 0
@@ -1856,6 +1950,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1961171742 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9204047121604401988, guid: 3c3f72394d35cfc47883427d98a91396, type: 3}
+  m_PrefabInstance: {fileID: 5559555867772198589}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd56d97c38d162940a0070d2e6ccdf9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2106580502
 GameObject:
   m_ObjectHideFlags: 0
