@@ -16,10 +16,12 @@ public class LightAttack : MonoBehaviour
     private Animator animator;
     public Transform orientation;
     private InputAction meleeAttackInputAction;
+    private PlayerMovement movement;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        movement = GetComponent<PlayerMovement>();
         GameManager.OnGameStateChange += HandleGameStateUpdate;
     }
 
@@ -41,7 +43,7 @@ public class LightAttack : MonoBehaviour
 
     private void HandleGameStateUpdate(GameState state)
     {
-        if (state == GameState.Lose)
+        if (state == GameState.Lose || state == GameState.Win)
         {
             meleeAttackInputAction.Disable();
 
@@ -56,11 +58,13 @@ public class LightAttack : MonoBehaviour
     {
         animator.SetTrigger("isPunching");
         animator.SetBool("Punching", true);
+        movement.DisableMovement();
     }
 
     private void OnClickReleased(InputAction.CallbackContext context)
     {
         animator.SetBool("Punching", false);
+        movement.EnableMovement();
     }
 
     public void HandlePunch()
@@ -73,7 +77,7 @@ public class LightAttack : MonoBehaviour
         {
             GameObject target = hitInfo.collider.gameObject;
             if (target == null){ return; }
-            ZombieHealth zombie = target.GetComponentInParent<ZombieHealth>();
+            ZombieHealth zombie = target.GetComponent<ZombieHealth>();
             if (zombie == null || zombie.IsDead()){ return;}
             zombie.TakeDamage(normalAttackDamage);
             SoundManager.PlaySound(SoundType.MELEE_NORMAL, 0.5f);

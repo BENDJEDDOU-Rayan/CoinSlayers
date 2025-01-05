@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7027159095580007439}
   - component: {fileID: 6610010549597164576}
   - component: {fileID: 1784084467066168237}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 3577405102849792703}
   - component: {fileID: 5822121838932155801}
   - component: {fileID: 3085132771194613231}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: HealthBarImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 4823659402864502604}
   - component: {fileID: 7774540519912145964}
   - component: {fileID: 6131188735468336255}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 1175153738927486941}
   - component: {fileID: 758870681446875102}
   - component: {fileID: 6612916344317872978}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -495,7 +495,7 @@ GameObject:
   - component: {fileID: 177633617064286013}
   - component: {fileID: 4504689580967048712}
   - component: {fileID: 2457496996647801406}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -47,7 +47,7 @@ public class HeavyAttack : MonoBehaviour
 
     private void HandleGameStateUpdate(GameState state)
     {
-        if (state == GameState.Lose)
+        if (state == GameState.Lose || state == GameState.Win)
         {
             heavyAttackInputAction.Disable();
 
@@ -70,6 +70,7 @@ public class HeavyAttack : MonoBehaviour
         IsHeavyAttacking = true;
         anim.SetTrigger("HeavyAttack");
         heavyAttackInputAction.Disable();
+        movement.DisableMovement();
         StartCoroutine(EndHeavyAttack());
     }
 
@@ -115,16 +116,8 @@ public class HeavyAttack : MonoBehaviour
 
     private IEnumerator EndHeavyAttack()
     {
-        // Wait until the "HeavyMeleeAttack" animation is completely finished
-        while (anim.GetCurrentAnimatorStateInfo(0).IsName("HeavyMeleeAttack") &&
-           anim.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
-        {
-            // Affiche l'état de l'animation pour le débogage
-            Debug.Log("Tu es dans l'animation HeavyMeleeAttack avec normalizedTime: " +
-                      anim.GetCurrentAnimatorStateInfo(0).normalizedTime);
-            yield return null; // Attendre un frame
-        }
-        // Set IsHeavyAttacking to false after the animation finishes
+        yield return new WaitForSeconds(1.2f);
+        movement.EnableMovement();
         IsHeavyAttacking = false;
 
         // Now wait for the cooldown
