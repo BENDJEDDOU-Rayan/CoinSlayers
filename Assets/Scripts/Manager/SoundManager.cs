@@ -20,7 +20,8 @@ public enum SoundType
     PLAYER_DEATH,
     PLAYER_PICKUP_COIN,
     GAME_WIN,
-    TELEPORTER_USE
+    TELEPORTER_USE,
+    PICKUP_ITEMS
 }
 
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]
