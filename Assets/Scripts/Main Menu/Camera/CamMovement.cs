@@ -34,5 +34,7 @@ public class CamMovement : MonoBehaviour
     {
         Vector3 targetPosition = initialPosition + new Vector3(lookAction.ReadValue<Vector2>().x * intensity, lookAction.ReadValue<Vector2>().y * intensity, 0);
         transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * smoothSpeed);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }

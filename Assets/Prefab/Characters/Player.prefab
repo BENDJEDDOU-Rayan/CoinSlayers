@@ -2011,14 +2011,14 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132149155446097}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 24182ab840f918d4aade3612a5b60645, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2593,6 +2593,7 @@ GameObject:
   - component: {fileID: 3467434449352136822}
   - component: {fileID: 1179857613587038975}
   - component: {fileID: 5897456618007236200}
+  - component: {fileID: 187807741417450748}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2776,6 +2777,19 @@ MonoBehaviour:
   normalKnockbackForce: 0
   hitParticle: {fileID: 878921929324854600, guid: f7b8d239ac084dc4a8b23820f881ddd4, type: 3}
   orientation: {fileID: -8679921383154817045}
+--- !u!114 &187807741417450748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4721915774894122598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aaf54df65346264f84737a2c7bf56b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneManager: {fileID: 0}
 --- !u!1 &5274217480125548317
 GameObject:
   m_ObjectHideFlags: 0

@@ -12309,6 +12309,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 187807741417450748, guid: 3445ee583f4b3534d855bc31acd09f5e, type: 3}
+      propertyPath: sceneManager
+      value: 
+      objectReference: {fileID: 2062342459}
+    - target: {fileID: 187807741417450748, guid: 3445ee583f4b3534d855bc31acd09f5e, type: 3}
+      propertyPath: sceneController
+      value: 
+      objectReference: {fileID: 2062342459}
     - target: {fileID: 2173161834918902310, guid: 3445ee583f4b3534d855bc31acd09f5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5
@@ -12349,22 +12357,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3278676617501767999, guid: 3445ee583f4b3534d855bc31acd09f5e, type: 3}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3278676617501767999, guid: 3445ee583f4b3534d855bc31acd09f5e, type: 3}
-      propertyPath: m_Volume
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3278676617501767999, guid: 3445ee583f4b3534d855bc31acd09f5e, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3278676617501767999, guid: 3445ee583f4b3534d855bc31acd09f5e, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 24182ab840f918d4aade3612a5b60645, type: 3}
     - target: {fileID: 4721915774894122598, guid: 3445ee583f4b3534d855bc31acd09f5e, type: 3}
       propertyPath: m_Name
       value: Player
